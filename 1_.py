@@ -1,7 +1,52 @@
+# function = A block of reusable code
+#  place () after the function name to invoke it
 # Methods, Help & Documentation Practice #1
-# Remove the characters to the left of our main text:
+def happy_birthday(name, age):
+    print(f"Happy birthday to {name}")
+    print(f"You are {age} old")
+    print("Happy birthday to you")
+    print()
 
-# ,
+happy_birthday("Bro, 20")
+happy_birthday("Steve, 21")
+happy_birthday("joe, 23")
+
+# Remove the characters to the left of our main text:
+def display_invoice(username, amount, due_date):
+   print(F"Hello {username}")
+   print(F"Your bill of ${amount: .2f} is due: {due_date}")
+   display_invoice("JoeSchmo", 100.10, "01/02")
+   display_invoice("Gerardo", 1000000, "6/7")
+
+def add(x,  y):
+    z = x + y
+    return z
+
+def subtract(x, y):
+    z = x - y
+    return z
+def multiply(x, y):
+    z = x * y
+    return z
+def division(x, y):
+    z = x / y 
+    return z
+
+
+print(add(1,2))
+print(subtract(1,2))
+print(multiply(1,2))
+print(division(1,2))
+
+
+def create_name(first, last):
+    first = first.capitalize()
+    last = last.capitalize()
+    return first + " " + last
+
+full_name = create_name("spongerbob", "squarepants")
+
+print(full_name)
 
 # :
 
